@@ -30,7 +30,6 @@ public class JackController {
         try {
             PrintWriter pw = response.getWriter();
             String result = jackService.query(null);
-            System.out.println("this is test");
             pw.write(result);
         }
         catch (IOException e) {
